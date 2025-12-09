@@ -1,5 +1,7 @@
 # Reproduction material for the paper 'An unfitted divergence-free higher order finite element method for the Stokes problem' by M. Neilan, M. Olshanskii and H. von Wahl
 
+[![DOI](https://zenodo.org/badge/1106042778.svg)](https://doi.org/10.5281/zenodo.17871850)
+
 This repository contains the reproduction material for the paper 'An unfitted divergence-free higher order finite element method for the Stokes problem' by M. Neilan, M. Olshanskii and H. von Wahl. This includes a cpp add-on module to NGSolve [1] implementing the finite element space used in the paper. This add-on is based on [2-4]. The material in [4] is used under the MIT license, see `module/src/LICENSE-NGS-myfe`.
 
 The repository contains the following files and directories:
