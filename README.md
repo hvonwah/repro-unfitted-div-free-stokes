@@ -1,18 +1,18 @@
 # Reproduction material for the paper 'An unfitted divergence-free higher order finite element method for the Stokes problem' by M. Neilan, M. Olshanskii and H. von Wahl
 
-This repository contains a cpp add-on module to NGSolve [1] implementing the finite element space used in the paper. This add-on is based on [2-4]. The material in [4] is used under the MIT license, see `module/src/LICENSE-NGS-myfe`.
+This repository contains the reproduction material for the paper 'An unfitted divergence-free higher order finite element method for the Stokes problem' by M. Neilan, M. Olshanskii and H. von Wahl. This includes a cpp add-on module to NGSolve [1] implementing the finite element space used in the paper. This add-on is based on [2-4]. The material in [4] is used under the MIT license, see `module/src/LICENSE-NGS-myfe`.
 
 The repository contains the following files and directories:
 
 | File/Directory | Description 
 | --- | --- 
 | `module/` | Contains the cpp add-on module implementing the FE space.
-| `module/src/*` | Contains the space implementation.
-| `module/demo/test_spaces_stokes.py` | Contains a simple demo of the method for a *fitted* Stokes problem.
+| `module/src/*` | Contains the finite element space implementation.
+| `module/demo/test_spaces_stokes.py` | Contains a simple demo of the finite element space for a *fitted* Stokes problem.
 | `run_examples.bash` | Bash script to run the examples presented in the paper.
 | `stokes.py` | Main implementation of the unfitted method.
-| `convergence.py` | Run convergence studies with given parameters.
-| `condition.py` | Run condition number tests.
+| `convergence.py` | Wrapper for convergence studies with given parameters.
+| `condition.py` | Wrapper for condition number tests.
 | `estcond.py` | Function to approximate the condition number of a linear system.
 | `example0_data.py` | Problem data for example on circular geometry.
 | `example1_data.py` | Problem data for Example 1.
@@ -22,7 +22,7 @@ The repository contains the following files and directories:
 | `LICENSE` | License file.
 
 ### Installation
-To run the python scripts locally, a compatible combination of `Netgen/NGSolve` and `ngsxfem` are required, together with the add-on module provided here. `Netgen/NGSolve` and `ngsxfem` can be installed by building from sources or the provided pip wheels. For detailed installation instructions, we refer to the installation guidelines of [NGSolve](https://docu.ngsolve.org/latest/install/install_sources.html), and [ngsxfem](https://github.com/ngsxfem/ngsxfem/blob/release/INSTALLATION.md). Our numerical results are realised using the following versions:
+To run the python scripts locally, a compatible combination of `Netgen/NGSolve` and `ngsxfem` are required, together with the add-on module provided here. `Netgen/NGSolve` and `ngsxfem` can be installed by building from sources or precompiled pip wheels. For detailed installation instructions, we refer to the installation guidelines of [NGSolve](https://docu.ngsolve.org/latest/install/install_sources.html), and [ngsxfem](https://github.com/ngsxfem/ngsxfem/blob/release/INSTALLATION.md). Our numerical results are realised using the following versions:
 
 | Package | git commit
 |-|-|

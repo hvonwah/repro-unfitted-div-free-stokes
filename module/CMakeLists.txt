@@ -15,9 +15,6 @@ set(install_dir ${ADDON_INSTALL_DIR_PYTHON}/${addon_name})
 install(TARGETS ${addon_name} DESTINATION ${install_dir})
 install(FILES src/__init__.py DESTINATION ${install_dir})
 
-# install additional python files/demos/examples
-# install(FILES demos/exploremesh.py DESTINATION ${install_dir}/demos)
-
 # generate stub files for autocomplete in IDEs
 # this must be done at the very end (such that the stubgen generation happens after the python modules are installed)
 ngsolve_generate_stub_files(${addon_name})
